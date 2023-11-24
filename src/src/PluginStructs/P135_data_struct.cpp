@@ -113,6 +113,17 @@ bool P135_data_struct::plugin_read(struct EventStruct *event)           {
       singleShotStarted = false;
       firstRead         = false;      // No longer first read
       errorCount        = 0;          // Reset
+
+        String log = F("SCD4x: CO2: ");
+        log += scd4x->getCO2();
+        log += F(" ppm, Humidity: ");
+        log += scd4x->getHumidity();
+        log += F("%, Temperature: ");
+        log += scd4x->getTemperature();
+        log += F("C");
+        addLog(LOG_LEVEL_INFO, log);
+
+
     } else {
       if (getMeasure && !firstRead) { // We got delayed somehow, let's wait a little more
         timerDelay = P135_EXTEND_MEASURE_TIME;

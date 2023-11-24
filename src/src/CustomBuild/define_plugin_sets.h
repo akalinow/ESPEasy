@@ -1415,9 +1415,9 @@ To create/register a plugin, you have to :
     #define USES_P067   // HX711_Load_Cell
     #define USES_P068   // SHT3x
 
-    #define USES_P070   // NeoPixel_Clock
-    #define USES_P071   // Kamstrup401
-    #define USES_P072   // HDC1080
+    //#define USES_P070   // NeoPixel_Clock
+    //#define USES_P071   // Kamstrup401
+    //#define USES_P072   // HDC1080
     #define USES_P074   // TSL2561
 
     #define USES_P080   // iButton Sensor  DS1990A
@@ -1425,15 +1425,17 @@ To create/register a plugin, you have to :
     #define USES_P084   // VEML6070
     #define USES_P086   // Receiving values according Homie convention. Works together with C014 Homie controller
 
-    #define USES_P090   // CCS811 TVOC/eCO2 Sensor
+    //#define USES_P090   // CCS811 TVOC/eCO2 Sensor
 
     //#define USES_P095  // TFT ILI9341
     //#define USES_P096  // eInk   (Needs lib_deps = Adafruit GFX Library, LOLIN_EPD )
-    #define USES_P097   // Touch (ESP32)
-    #define USES_P098   // PWM motor  (relies on iRAM, cannot be combined with all other plugins)
+    //#define USES_P097   // Touch (ESP32)
+    //#define USES_P098   // PWM motor  (relies on iRAM, cannot be combined with all other plugins)
     //#define USES_P099   // XPT2046 Touchscreen
     #define USES_P105   // AHT10/20/21
     #define USES_P134   // A02YYUW
+    #define USES_P110   // VL53L0X Time of Flight sensor
+    #define USES_P135   // SCD4x  CO2
 #endif
 
 #ifdef PLUGIN_SET_COLLECTION_B
